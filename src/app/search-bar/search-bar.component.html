@@ -1,6 +1,6 @@
-<form>
+<form (ngSubmit)="findAccountInfo()" #searchBarForm="ngForm">
     <div>
-        <input type="text" name="username" id="username" placeholder="Username">
+        <input type="text" [(ngModel)]="username" name="username" id="username" placeholder="Username" required>
         <button type="submit">Search</button>
     </div>
 </form>
