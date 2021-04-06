@@ -1,3 +1,22 @@
 button {
     margin-top: 15px;
 }
+
+img {
+    width: 250px;
+    height: 250px;
+}
+
+.padding{
+    padding-top: 40px;
+}
+
+.underline {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+}
+
+.spacing {
+    margin: 20px;
+}

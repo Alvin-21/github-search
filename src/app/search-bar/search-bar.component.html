@@ -5,14 +5,14 @@
             <button class="btn-dark" type="submit">Search</button>
         </div>
     </form>
-    <div *ngIf="accountDetails">
-        <div>
-            <figure>
+    <div class="padding" *ngIf="accountDetails">
+        <div class="row">
+            <figure class="col-md-6">
                 <img src="{{accountDetails.avatar_url}}" alt="Profile Image" class="rounded-circle">
                 <figcaption><a href="{{accountDetails.html_url}}" target="_blank">View this account on Github.</a></figcaption>
             </figure>
-            <div>
-                <h3>{{accountDetails.login}}</h3>
+            <div class="col-md-6">
+                <h3 class="underline">{{accountDetails.login}}</h3>
                 <p>Name: {{accountDetails.name}}</p>
                 <p>Followers: {{accountDetails.followers}} </p>
                 <p>Following: {{accountDetails.following}} </p>
@@ -20,8 +20,9 @@
             </div>
         </div>
     </div>
-    <div *ngFor="let repo of accountRepos">
-        <div>
+    <h3 class="underline" *ngIf="accountDetails">Repositories</h3>
+    <div class="card spacing" *ngFor="let repo of accountRepos">
+        <div class="card-body">
             <h4>{{repo.name}}</h4>
             <p>{{repo.description}}</p>
             <a href="{{repo.html_url}}" target="_blank">View this project on Github.</a>
