@@ -7,3 +7,12 @@
 .italic {
     font-style: italic;
 }
+
+section {
+    background-color:  rgb(49, 49, 49);
+    color: whitesmoke;
+}
+
+h1, h2 {
+    color: rgb(210, 126, 218);
+}

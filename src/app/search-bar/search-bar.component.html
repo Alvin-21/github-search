@@ -22,7 +22,7 @@
     </div>
     <h3 class="underline" *ngIf="accountDetails">Repositories</h3>
     <div class="card spacing" *ngFor="let repo of accountRepos">
-        <div class="card-body">
+        <div class="card-body background">
             <h4>{{repo.name}}</h4>
             <p>{{repo.description}}</p>
             <a href="{{repo.html_url}}" target="_blank">View this project on Github.</a>

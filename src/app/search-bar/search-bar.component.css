@@ -20,3 +20,11 @@ img {
 .spacing {
     margin: 20px;
 }
+
+.background {
+    background-color: black;
+}
+
+h3, h4 {
+    color: rgb(210, 126, 218);
+}
