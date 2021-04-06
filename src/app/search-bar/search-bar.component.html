@@ -1,6 +1,23 @@
-<form (ngSubmit)="findAccountInfo()" #searchBarForm="ngForm">
-    <div>
-        <input type="text" [(ngModel)]="username" name="username" id="username" placeholder="Username" required>
-        <button type="submit">Search</button>
+<div>
+    <form (ngSubmit)="findAccountInfo()" #searchBarForm="ngForm">
+        <div>
+            <input type="text" [(ngModel)]="username" name="username" id="username" placeholder="Username" required>
+            <button type="submit">Search</button>
+        </div>
+    </form>
+    <div *ngIf="accountDetails">
+        <div>
+            <figure>
+                <img src="{{accountDetails.avatar_url}}" alt="Profile Image" class="rounded-circle">
+                <figcaption><a href="{{accountDetails.html_url}}" target="_blank">View this account on Github.</a></figcaption>
+            </figure>
+            <div>
+                <h3>{{accountDetails.login}}</h3>
+                <p>Name: {{accountDetails.name}}</p>
+                <p>Followers: {{accountDetails.followers}} </p>
+                <p>Following: {{accountDetails.following}} </p>
+                <p>Repositories: {{accountDetails.public_repos}}</p>
+            </div>
+        </div>
     </div>
-</form>
+</div>
