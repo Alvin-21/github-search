@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.5.
 
-#### This project allows the user search for a github account and view its details, 27/03/2021
+#### This project allows the user search for a github account and view its details, 3/04/2021
 
 #### By Alvin Awuor
 
