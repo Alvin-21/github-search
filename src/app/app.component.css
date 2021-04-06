@@ -1,0 +1,9 @@
+.underline {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+}
+
+.italic {
+    font-style: italic;
+}
