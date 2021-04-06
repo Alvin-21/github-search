@@ -16,7 +16,7 @@ export class SearchEngineService {
     return this.http.get("https://api.github.com/users/" + username + "?access_token=" + this.apiKey);
   }
 
-  updateAccount(username: string) {
+  updateUsername(username: string) {
     this.username = username;
   }
 
