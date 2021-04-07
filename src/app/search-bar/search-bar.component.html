@@ -26,7 +26,7 @@
             <h4>{{repo.name}}</h4>
             <p>{{repo.description}}</p>
             <p>Created on: {{repo.created_at | date}}</p>
-            <p>Days since created: {{repo.created_at}}</p>
+            <p>Days since created: {{repo.created_at | dateCount}}</p>
             <a href="{{repo.html_url}}" target="_blank">View this project on Github.</a>
         </div>
     </div>

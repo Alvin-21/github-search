@@ -5,8 +5,15 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class DateCountPipe implements PipeTransform {
 
-  transform(value: unknown, ...args: unknown[]): unknown {
-    return null;
-  }
+  transform(value: any): string {
+    let today: any = new Date();
+    let createdDate: any = new Date(value);
+    var dateDifference = Math.abs(today - createdDate);
+    const secondsInDay = 86400;
+    var dateInSeconds = dateDifference * 0.001;
+    var dateInDays = Math.floor(dateInSeconds / secondsInDay);
 
+    return dateInDays + " days";
+  }
+  
 }
