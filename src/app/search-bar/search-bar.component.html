@@ -22,7 +22,7 @@
     </div>
     <h3 class="underline" *ngIf="accountDetails">Repositories</h3>
     <div class="card spacing" *ngFor="let repo of accountRepos">
-        <div class="card-body background">
+        <div class="card-body background" appHover>
             <h4>{{repo.name}}</h4>
             <p>{{repo.description}}</p>
             <p>Created on: {{repo.created_at | date}}</p>
