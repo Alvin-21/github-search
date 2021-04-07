@@ -7,12 +7,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { DateCountPipe } from './date-count.pipe';
+import { HoverDirective } from './hover.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchBarComponent,
     DateCountPipe,
+    HoverDirective,
   ],
   imports: [
     BrowserModule,
